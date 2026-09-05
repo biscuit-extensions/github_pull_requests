@@ -1,0 +1,7 @@
+[extension]
+id = "github_pull_requests"
+name = "GitHub Pull Requests"
+version = "0.1.0"
+description = "Review and manage GitHub pull requests and issues within Biscuit"
+author = "biscuit-extensions"
+icon = "icon.png"
