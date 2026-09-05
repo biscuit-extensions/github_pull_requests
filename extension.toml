@@ -1,7 +1,19 @@
 [extension]
 id = "github_pull_requests"
 name = "GitHub Pull Requests"
-version = "0.1.0"
+version = "0.2.0"
 description = "Review and manage GitHub pull requests and issues within Biscuit"
-author = "biscuit-extensions"
+author = "tomlin7"
 icon = "icon.png"
+
+[dependencies]
+python = ["requests>=2.31.0"]
+tools = ["gh", "git"]
+
+[contributes]
+commands = [
+    { id = "github_pull_requests.view_pr", title = "GitHub: View Pull Request by Number or URL" },
+    { id = "github_pull_requests.checkout_pr", title = "GitHub: Checkout Pull Request Branch" },
+    { id = "github_pull_requests.refresh_status", title = "GitHub: Refresh Pull Request Status" },
+    { id = "github_pull_requests.view_diff", title = "GitHub: View Pull Request Diff" }
+]
